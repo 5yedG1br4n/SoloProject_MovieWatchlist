@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <div id="app-container">
+      <header id="mw-header">
+        <h1 id="hero-title">My Watchlist</h1>
+        <h3 id="subtitle-link"><a href="index.html">Search for movies</a></h3>
+      </header>
+      <main id="mw-body" class="watchlist-body">
+        <div id="default-state-wl">
+          <h3 id="default-subtitle-wl">
+            Your watchlist is looking a little empty...
+          </h3>
+          <div id="add-movies">
+            <a href="index.html"
+              ><img src="assets/add-btn-icon.svg" id="add-movies-btn"
+            /></a>
+
+            <p id="default-sub-2">Let's add some movies!</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

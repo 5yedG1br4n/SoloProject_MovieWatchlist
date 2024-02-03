@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <div id="app-container">
+      <header id="mw-header">
+        <h1 id="hero-title">Find your film</h1>
+        <h3 id="watchlist-link"><a href="watchlist.html">My Watchlist</a></h3>
+      </header>
+      <section id="input-section">
+        <label for="search-movie-input"
+          ><img src="assets/search_icon.svg" alt="a magnifying glass icon"
+        /></label>
+        <input type="text" id="search-movie-input" placeholder="Blade Runner" />
+        <button id="search-movie-btn">Search</button>
+      </section>
+      <main id="mw-body">
+        <div id="default-state">
+          <img
+            id="default-body-img"
+            src="assets/movie_explore_icon.svg"
+            alt="a movie reel silhouette"
+          />
+          <h3 id="default-subtitle">Start exploring</h3>
+        </div>
+      </main>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

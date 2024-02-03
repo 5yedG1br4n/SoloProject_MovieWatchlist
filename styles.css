@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: #2e2e2f;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  width: 34.375rem;
+}
+
+/* Header */
+
+#mw-header {
+  position: fixed;
+  left: auto;
+  right: auto;
+  width: 34.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2.81em;
+  height: 13rem;
+  background-image: url("assets/mv_hero_image.png");
+  background-size: cover;
+  background-position-y: 22%;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #121212;
+  opacity: 0.7;
+}
+
+#hero-title,
+#subtitle-link,
+#watchlist-link {
+  position: relative;
+  z-index: 1;
+}
+
+#hero-title {
+  font-size: 2.67rem;
+  font-weight: 800;
+  line-height: 1.48; /* 55.556% */
+  letter-spacing: -1.926px;
+}
+
+#subtitle-link,
+#watchlist-link {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25; /* 142.857% */
+}
+
+#subtitle-link a,
+#watchlist-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#subtitle-link a:visited,
+#subtitle-link a:active,
+#watchlist-link a:visited,
+#watchlist-link a:active {
+  color: #fff;
+}
+
+/* Input */
+
+#input-section {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 11.812rem;
+  width: 28.875rem;
+  height: 2.375rem;
+  margin: 0px 2.81em;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  background: #2e2e2f;
+  border-radius: 0.375em;
+}
+
+#input-section label {
+  margin: 0.4em 0 0 0.5em;
+  width: 20px;
+}
+
+#search-movie-input {
+  background: #2e2e2f;
+  border: none;
+  padding: 0.5em 1em;
+  color: #a5a5a5;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  width: 100%;
+}
+
+#search-movie-input:focus {
+  outline: none;
+}
+
+#search-movie-btn {
+  width: 7.5rem;
+  height: 100%;
+  padding: 0.5em 1em;
+  justify-content: center;
+  background: #4b4b4b;
+  border: none;
+  border-radius: 0 0.375em 0.375em 0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+/* Main */
+
+#mw-body {
+  background: #121212;
+  position: absolute;
+  top: 13rem;
+  width: 100%;
+  min-height: 50rem;
+  z-index: -1;
+}
+
+#default-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 9.375rem;
+  margin: 14.375em auto;
+}
+
+#default-body-img {
+  width: 4.375rem;
+  fill: #2e2e2f;
+}
+
+#default-subtitle {
+  color: #2e2e2f;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 0.5em;
+}
+
+#empty-state-para {
+  color: #787878;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 20.06rem;
+  margin: 14.375em auto;
+}
+
+/* Watchlist */
+
+#default-state-wl {
+  width: 22.69rem;
+  margin: 14.375em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#add-movies {
+  display: flex;
+}
+
+#default-subtitle-wl {
+  color: #787878;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.78; /* 158.333% */
+}
+
+#add-movies-btn {
+  cursor: pointer;
+  margin-top: 0.1em;
+}
+
+#default-sub-2 {
+  margin-left: 0.5em;
+}
+
+#movie-data-wrapper {
+  padding: 3.812em 2.81em;
+}
+
+.movie-data-container {
+  display: flex;
+  border-bottom: 1px solid #2c2c2c;
+  padding: 1.5em 0;
+  gap: 1em;
+}
+
+.movie-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.movie-header-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.movie-subheader-container {
+  display: flex;
+  gap: 0.75em;
+}
+
+.watchlist-btn-label {
+  display: flex;
+  gap: 0.25em;
+}
+
+.movie-poster {
+  width: 6.187rem;
+  height: 9.213em;
+  border-radius: 0.25rem;
+}
+
+.movie-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.star-icon {
+  width: 0.93rem;
+  height: 0.93rem;
+}
+
+.movie-rating,
+.movie-runtime,
+.movie-genre,
+.watchlist-label {
+  font-size: 0.75rem;
+}
+
+.addto-watchlist-btn {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.movie-plot {
+  color: #a5a5a5;
+  font-size: 1rem;
+}
